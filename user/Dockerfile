@@ -4,7 +4,7 @@ WORKDIR     /opt/server
 COPY        package.json /opt/server
 RUN         npm install -y
 COPY        server.js /opt/server
-ENTRYPOINT  ["node","server.js"]
+ENTRYPOINT  [ "node" , "server.js" ]
 
 # FROM node:14
 
