@@ -3,7 +3,7 @@ EXPOSE     8080
 WORKDIR    /opt/server
 COPY       package.json /opt/server
 RUN        npm install -y
-COPY       package.json /opt/server
+COPY       server.js /opt/server
 ENTRYPOINT [ "node" , "server.js"]
 
 
