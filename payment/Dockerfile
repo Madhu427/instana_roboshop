@@ -1,9 +1,9 @@
 FROM python:3.9
 
 EXPOSE 8080
-USER root
+# USER root
 
-ENV INSTANA_SERVICE_NAME=payment
+# ENV INSTANA_SERVICE_NAME=payment
 
 WORKDIR /app
 
